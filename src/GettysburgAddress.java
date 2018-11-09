@@ -13,7 +13,7 @@ public class GettysburgAddress
 			words.add(file.next());
 		}
 		
-		String longest;
+		String longest = "random";
 		int Average = 0;
 		for(String a: words)
 		{
@@ -22,6 +22,15 @@ public class GettysburgAddress
 				longest = a;
 			}
 		}
+		System.out.println(longest);
+		int sum = 0;
+		int counter = 0;
+		for(String a: words)
+		{
+			sum += a.length();
+			counter++;
+		}
+		System.out.println(sum / counter);
 		
 		
 	}
